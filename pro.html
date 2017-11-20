@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rikenbhai Patel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-mfizz.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+  </head>
+  <body>
+
+    <div id="page">
+
+      <header>
+        <div class="container">
+          <div id="name">
+
+            <h1>Rikenbhai
+            <span class="lastname">Patel</span>
+            <span class="info">  16 Norbrook Crescent · Etobicoke, Ontario · (647) 470-9868 · </span>
+            <span class="email">r88patel@ryerson.com</span>
+            </h1>
+          </div>
+
+        </div>
+      </header>
+
+
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="edu.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li class="current"><a href="pro.html">Projects</a></li>
+            <li><a href="exp.html">Experience</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="projects">
+        <div class="container">
+          <h1>Pro<span style="color:#E5002B; font-weight:bold">jects</span></h1>
+          <article id="leftsidepro">
+            <h3>Smartlamp EDP Project</h3>
+            <ul id="unol2">
+              <li>Designed Android APP and implemented it via Android Studio</li>
+              <li>Configured Arduino and Bluetooth module to receive input from Android APP</li>
+              <li>APP used to turn lamp on/off (button/voice command) | change color of LEDs | change brightness</li>
+            </ul>
+
+            <br>
+
+
+            <style type="text/css" scoped>
+            .iconpro:hover { color:#E5002B; }
+            </style>
+            <span class="iconpro"><i class="icon-java-bold"></i></span>
+
+            <div class="xml2">
+              <img src="./img/test.png"  height="34" width="34" >
+            </div>
+
+            <ul id="unol3">
+              <li>JAVA</li>
+              <li>XML</li>
+            </ul>
+
+            <hr>
+
+            <h3>TV Show Database</h3>
+            <ul id="unotv">
+              <li>Designed database through ER-diagrams and maintained database</li>
+              <li>Performed various queries/operations on the database with the use of SQL statements</li>
+              <li>Converted DB to - Database programming(JAVA)/Semi-structured database(XML) ro perfrom operations</li>
+            </ul>
+
+            <style type="text/css" scoped>
+            .iconpro:hover { color:#E5002B; }
+            </style>
+            <span class="iconpro"><i class="icon-java-bold"></i></span>
+
+            <div class="xml2">
+              <img src="./img/test.png"  height="34" width="34" >
+            </div>
+
+            <style type="text/css" scoped>
+            .iconpro:hover { color:#E5002B; }
+            </style>
+            <span class="iconpro"><i class="icon-mysql-alt"></i></span>
+
+            <ul id="unotv2">
+              <li>JAVA</li>
+              <li>XML</li>
+              <li>SQL</li>
+            </ul>
+
+          </article>
+
+          <aside id="rightsidepro">
+            <div class="w3-content w3-section" style="max-width:500px">
+              <img class="mySlides" src="./img/app1.png" style="width:50%" align="right">
+              <img class="mySlides" src="./img/app2.png" style="width:50%" align="right">
+              <img class="mySlides" src="./img/app3.png" style="width:50%" align="right">
+              <img class="mySlides" src="./img/app4.png" style="width:50%" align="right">
+            </div>
+          </aside>
+
+          <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+
+
+        </div>
+
+      </div>
+
+      <div id="footer">
+        <div class="container">
+          <p>Copyright &copy; 2017 Rikenbhai Patel</p>
+        </div>
+
+      </div>
+
+  </body>
+</html>
