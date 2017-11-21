@@ -291,7 +291,9 @@ article#leftsidepro{
 
 .mySlides{
   position: relative;
-  top: -800px;
+  float: right;
+  top: -760px;
+  margin-top: 10px;
 }
 
 ul#unol2 li {
@@ -361,4 +363,72 @@ ul#unotv2 li {
 ul#unotv2 {
   padding: 0;
   margin: 0;
+}
+
+/* Media */
+
+@media(max-width: 768px){
+  header #name,
+  nav,
+  nav li{
+      float: none;
+      text-align: center;
+      width: 100%;
+  }
+
+  header #name {
+    line-height: 22px;
+  }
+
+  header {
+    padding-bottom: 10px;
+  }
+
+  #content h1, #education h1, #skills h1, #projects h1, #experience h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  #rightbar{
+    text-align: center;
+  }
+
+  #unol4 {
+    display: none;
+  }
+
+  #leftbar .icon, .icon3, .icon4, .icon5, .icon6, .xml, .vb{
+    padding: 0;
+    margin: 0;
+
+  }
+
+  #leftbar .xml{
+    padding-bottom: 6px;
+  }
+
+  #unol5 {
+    display: none;
+  }
+
+  #leftbar .fileicon, .andicon, .dataicon{
+    padding: 0;
+  }
+
+  #skills h4{
+    margin-bottom: 5px;
+  }
+
+  #projects h1 {
+    margin-top: 5px;
+  }
+
+  #rightsidepro {
+    display: none;
+  }
+
+  #rightside{
+    text-align: center;
+  }
+
 }
